@@ -79,6 +79,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
     private static final String MBN_VERSION_PATH = "/persist/speccfg/mbnversion";
     private static final String QGP_VERSION_PATH = "/persist/speccfg/qgpversion";
+    private static final String KEY_NOS_CHANGELOG = "nos_changelog";
+    private static final String KEY_NOS_LOGO = "nos_logo";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -143,6 +145,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         if(mMbnVersion == null){
             getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
         }
+        // Nitrogen
+        findPreference(KEY_NOS_CHANGELOG).setEnabled(true);
+        findPreference(KEY_NOS_LOGO).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);

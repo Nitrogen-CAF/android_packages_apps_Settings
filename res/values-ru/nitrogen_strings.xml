@@ -16,6 +16,11 @@
     <string name="sim_mobile_network_settings_category_title">Настройки мобильной сети</string>
     <string name="sim_mobile_network_settings_title">Параметры SIM %d</string>
 
+    <!-- Changelog -->
+    <string name="changelog_title">Список изменений</string>
+    <string name="changelog_summary">С момента последнего обновления</string>
+    <string name="changelog_error">Не удается загрузить список изменений</string>
+
     <!-- Nitrogen Settings -->
     <string name="nitrogen_settings_title">Персонализация</string>
     <string name="header_category_nitrogen">Опции Nitrogen OS</string>
